@@ -1,0 +1,13 @@
+<% include layout/header.ejs %>
+
+   <a href="/create">Add</a>
+   <ul>
+    <% posts.forEach(function(post){ %>
+      <li>
+          <b><%= post.title %></b>
+      </br>
+          <%= post.body %>
+      </li>
+    <% }); %>
+  </ul>
+  <% include layout/footer.ejs %>
